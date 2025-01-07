@@ -1,0 +1,97 @@
+/*Estilos Generales*/
+.bodyCarreras {
+    text-align: center;
+    background-color: #d5d5d5;
+    font-size: 16px;  
+    
+}
+
+/*responsive de Tabletas */
+@media (max-width: 768px) {
+    .bodyCarreras{
+      font-size: 14px;
+    }
+  }
+  
+   /*responsive de Celulares */
+  @media (max-width: 480px) {
+    .bodyCarreras{
+      font-size: 12px;
+    }
+  }
+  .titleCarreras {
+    color: black;
+    font-weight: bold;
+  }
+
+  .container { 
+    display: flex;
+    justify-content: center; /*Centra Horizontalmente*/
+    align-items: center; /* Centra verticalmente (si se desea) */
+    font-size: 16px;
+  }
+
+  .tablaStyle {
+    background-color: #002147;
+    color: white;
+    width: 80%;
+    height: 500px;
+    font-weight: bold;
+  }
+
+  .botonsito {
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    width: 90%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white; /* Blue button color */
+    color: black; /* White button text color */
+  }
+
+  .botonsito:hover {
+    background-color: gray ;
+  }
+
+  .botonCrear { 
+    text-align: center; /* Centra verticalmente (si se desea) */
+    width: 30%;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #318CE7; /* Blue button color */
+    color: white; /* White button text color */
+    font-weight: bold;
+  }
+
+  .botonCrear:hover {
+    background-color: black;
+  }
+
+  .botonVolver {
+    text-align: center; /* Centra verticalmente (si se desea) */
+    width: 30%;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #318CE7; /* Blue button color */
+    color: white; /* White button text color */
+    font-weight: bold;
+  }
+
+  .botonVolver:hover {
+    background-color: black;
+  }
+  a{
+    text-decoration: none;
+  }

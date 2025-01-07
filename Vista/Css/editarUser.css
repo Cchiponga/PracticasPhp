@@ -1,0 +1,191 @@
+/*ESTILO DE EDITAR ALUMNO*/
+
+.bodyEditarAlumno{
+   font-size: 16px;
+   background-image: url("../Imagenes/Logo.png"); /* logo del instituto*/
+   background-size: 12%;
+   background-repeat: no-repeat;
+   left: 9%;
+   text-align: center;
+}
+
+@media (max-width : 768px) {  /* Responsive para tabletas  */
+    .bodyEditarAlumno{
+        font-size: 14px;
+    }
+}
+
+@media (max-width : 480px) { /* Responsive para celulares */
+    .bodyEditarAlumno{
+        font-size: 12px;
+    }
+}
+
+
+.containerEditarAlumno{
+
+    margin-left: 25%;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    height: 55%;
+    background-color: #002147;
+    color: white;
+    text-align: center;
+
+     
+}
+
+
+
+  label{
+    font-size: 22px;
+  }
+
+ 
+.btnEditAlumno{
+    
+    font-size: 25px;
+    width: 28%;
+    border: 1px solid black;
+    background-color:#002147;
+    border-radius: 5px;
+    margin-left: 36%;
+}
+
+.btnact{
+    font-size: 16px;
+    position: relative;
+    top:0%;
+    bottom: 0%;
+    padding:10px 20px;
+    right:11%;
+    
+    width: 116%;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;  
+}
+
+.genero {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;  
+}
+
+
+/*
+.inputEditAlumno{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+
+    /*justify-content: center; /* Centra verticalmente */ 
+/*} */
+
+    
+/**************************
+***************************
+***************************
+***************************
+**************************/
+/**************************
+***************************
+***************************
+***************************
+**************************/
+/**************************
+***************************
+***************************
+***************************
+**************************/
+
+
+
+/*ESTILOS PARA EL EDITAR PROFESOR*/
+
+.bodyEditProfesor{
+    font-size: 16px;
+    background-image: url("../Imagenes/isft182SinFondoLOGO.png"); /* logo del instituto*/
+    background-size: 12%;
+    background-repeat: no-repeat;
+    left: 9%;
+    text-align: center;
+ }
+ 
+ @media (max-width : 768px) {  /* Responsive para tabletas  */
+     .bodyEditProfesor{
+         font-size: 14px;
+     }
+ }
+ 
+ @media (max-width : 480px) { /* Responsive para celulares */
+     .bodyEditProfesor{
+         font-size: 12px;
+     }
+ }
+
+ 
+ .containerEditProfesor{
+ 
+     margin-left: 25%;
+     border: 1px solid black;
+     border-radius: 10px;
+     width: 50%;
+     height: 55%;
+     background-color: #002147;
+     color: white;
+         
+ }
+ 
+ 
+   label{
+     font-size: 22px;
+   }
+ 
+  
+ .btnEditProfesor{
+     text-align: center;
+     font-size: 25px;
+     width: 28%;
+     border: 1px solid black;
+     background-color:#318CE7;
+     border-radius: 5px;
+     margin-left: 36%;
+ }
+ 
+ .btnactProfesor{
+     font-size: 16px;
+     position: relative;
+     top:0%;
+     bottom: 0%;
+     padding:10px 20px;
+     right:11%;
+     
+     width: 116%;
+     
+ }
+ 
+ .textoEditProfesor{
+     color: white;
+     text-decoration: none;  
+ }
+
+ .generoEditProfesor{
+     display: block;
+     text-align: center;
+     margin-bottom: 10px;
+ }
+ 
+ .inputEditProfesor {
+     display: flex;
+     flex-direction: column;
+     align-items: center; /* Centra horizontalmente */
+     justify-content: center; /* Centra verticalmente */
+ }

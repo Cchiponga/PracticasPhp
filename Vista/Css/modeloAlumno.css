@@ -1,0 +1,500 @@
+/* Font and base styles */
+html {
+    font-size: 16px; /* Tamaño base para todo el documento */
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Header general */
+.header {
+    background-color: #0D1F36; /* Mantengo el color original */
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;    
+    color: white;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    z-index: 1000; /* Se asegura que el header esté por encima de otros elementos */
+}
+
+/* Contenedor del correo y ubicación */
+.contact-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+/* Redes sociales alineadas a la derecha */
+.social-media {
+    margin-left: auto;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #0D1F36;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* Body general */
+.bodyPractica {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: 12%;
+    font-family: Arial, sans-serif;
+    background-color: #d5d5d5;
+    font-size: 16px;
+}
+
+td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+/* Form containers */
+#form, #container {
+    background-color: #0A223D; /* Mantengo el color original del contenedor */
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 40%;
+}
+.logo-link {
+    position: absolute;
+    top: 10vh; /* Ajusta según la posición deseada */
+    left: 20px; /* Ajusta según la posición deseada */
+    width: 120px; /* Tamaño del contenedor que incluye el logo */
+    height: 120px; /* Tamaño del contenedor que incluye el logo */
+    background-color: #d5d5d5; /* Color de fondo de la caja, igual al fondo de la página */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el logo */
+    align-items: center; /* Centra verticalmente el logo */
+    border-radius: 10px; /* Opción: añade bordes redondeados para hacer la caja más suave */
+    transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+}
+
+/* Efecto al pasar el cursor */
+.logo-link:hover {
+    background-color: #b0b0b0; /* Cambia a un color diferente cuando el cursor esté sobre el contenedor */
+}
+
+.logo-link img {
+    width: 140%; /* Escala la imagen un poco más grande */
+    height: 140%; /* Escala la imagen un poco más grande */
+    object-fit: contain; /* Asegura que el logo se ajuste al contenedor sin deformarse */
+}
+
+#container {
+    width: 90%;
+}
+
+/* Título */
+.TituloPractica {
+    text-align: center;
+    margin: 0;
+    height: auto;
+}
+
+.titulo{
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Contenedor de la tabla */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Ligero contraste en las tablas */
+    text-align: center;
+}
+
+.tabla th, .tabla td {
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+/* Scroll dentro de las celdas de observación */
+.tabla td.observacion {
+    max-width: 200px; /* Ajusta el tamaño máximo de la columna de observación */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.tabla td.observacion:hover {
+    white-space: normal; /* Permite que se vea todo el texto al hacer hover */
+    overflow: visible;
+}
+
+.tabla tbody {
+    background-color: #1A2E4A; /* Restaurado el color de fondo de la tabla */
+}
+
+/* Estilo del scroll en la tabla */
+.tabla tbody {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Botones generales */
+a, button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a:hover, button:hover {
+    background-color: green;
+    color: white;
+}
+
+.btnInscribirse:hover, .btncomprobante:hover {
+    background-color: green;
+}
+
+.btnbaja:hover {
+    background-color: #900C3F;
+}
+
+/* Botones posicionados */
+.btnperfil, .btnInstituto, .btnvolver, .btnFiltrar {
+    position: absolute;
+}
+
+.btnperfil {
+    top: 130px;
+    left: 600px;
+}
+
+.btnInstituto {
+    top: 130px;
+    left: 700px;
+}
+
+.btnvolver {
+    top: 130px;
+    right: 100px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Inputs y Selectores */
+input[type=text], input[type=password], input[type=email], select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Botones en formularios */
+button {
+    background-color: #4CAF50; /* Restaurado el color del botón */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Diseño responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Oculta el correo y la dirección en pantallas pequeñas */
+    .contact-info {
+        display: none; /* Asegura que no se muestre el contenedor */
+    }
+    .logo-link {
+        display: none; /* Asegura que no se muestre el contenedor */
+    }
+
+    /* Muestra solo los iconos de redes sociales */
+    .social-media {
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Ocupar todo el ancho */
+    }
+
+    /* Asegura que el resto de los elementos no se superpongan */
+    .bodyIndex {
+        margin-top: 5vh; /* Ajusta para evitar superposición con el contenido */
+        overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+        max-height: calc(100vh - 150px); /* Limita la altura máxima para que el scroll funcione */
+    }
+
+    /* Aumentar el tamaño del formulario */
+    #form {
+        width: 90%; /* Aumenta el ancho del formulario */
+        padding: 20px; /* Reduce el padding para que sea más compacto */
+        margin: 0 auto; /* Centra el formulario horizontalmente */
+    }
+
+    /* Estilo para centrar el texto de creación de cuenta y recuperación de contraseña */
+    #boton p {
+        margin-bottom: 10px; /* Reduce el espacio entre el texto y el botón */
+        color: white; /* Asegurar que el texto sea visible */
+        text-align: center; /* Centrar el texto */
+        width: 100%; /* Asegura que el párrafo ocupe todo el ancho */
+    }
+
+    /* Ajustes para reducir espacio entre títulos y botones */
+    h2.textAlumno {
+        margin-top: 10px; /* Reduce el espacio entre los subtítulos */
+        margin-bottom: 5px; /* Reduce el espacio entre subtítulo y botón */
+    }
+
+    h3 {
+        margin-top: 5px; /* Reduce el espacio entre los botones */
+        margin-bottom: 5px; /* Reduce el espacio entre botones y subtítulos */
+    }
+
+    /* Ajustes para los botones */
+    a.btn {
+        margin: 3px auto; /* Reduce el espacio entre los botones */
+        padding: 8px 15px; /* Reduce el padding del botón */
+    }
+
+    /* Estilo del botón de cerrar sesión */
+    a.cerrar {
+        margin-top: 10px; /* Reduce el espacio antes del botón de cerrar sesión */
+        padding: 8px 15px; /* Reduce el padding del botón */
+    }
+
+    /* Asegurar que los enlaces tengan un estilo apropiado */
+    .register {
+        color: black; /* Cambia el color del texto */
+        background-color: white; /* Color de fondo */
+        text-decoration: none; /* Elimina el subrayado del enlace */
+        display: block; /* Cada enlace ocupa toda una línea */
+        margin-bottom: 10px; /* Reduce el espacio entre los enlaces */
+        text-align: center; /* Centrar el texto */
+        padding: 8px; /* Reduce el padding del botón */
+        border-radius: 5px; /* Bordes redondeados */
+        transition: background-color 0.3s; /* Efecto de transición al pasar el mouse */
+        width: 150px; /* Ajusta el ancho del botón */
+        margin: 0 auto; /* Centrar el botón horizontalmente */
+    }
+
+    /* Estilo para el footer en responsive */
+    .contact-info {
+        position: relative; /* Permitir que se ubique debajo del contenido */
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 10px 0; /* Añadir algo de espacio arriba y abajo */
+        text-align: center; /* Centrar el texto */
+        background-color: #d5d5d5; /* Color de fondo igual al de la caja */
+        margin-top: 20px; /* Espacio por encima del footer */
+    }
+}
+
+/* Diseño responsive para pantallas más pequeñas */
+/* Diseño responsive para pantallas en modo horizontal (landscape) */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Ajustes para el header */
+    .header {
+        flex-direction: row; /* Asegura que los elementos se alineen horizontalmente */
+        padding: 5px 10px; /* Reduce el padding */
+    }
+
+    /* Mostrar el contenedor de correo y ubicación */
+    .contact-info {
+        display: flex; /* Muestra el contenedor */
+        font-size: 12px; /* Reduce el tamaño de fuente */
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si es necesario */
+        justify-content: center; /* Centra los elementos */
+    }
+
+    /* Redes sociales alineadas a la derecha */
+    .social-media {
+        margin-left: 0; /* Elimina margen izquierdo */
+        justify-content: center; /* Centra los iconos de redes sociales */
+    }
+
+    /* Ajustes para el formulario */
+    #form {
+        width: 80%; /* Aumenta el ancho del formulario */
+        padding: 15px; /* Ajusta el padding */
+        margin: 20px auto; /* Centra el formulario */
+    }
+
+    /* Títulos y textos */
+    .titulo {
+        font-size: 20px; /* Reduce el tamaño del título */
+    }
+
+    /* Ajustes para la tabla */
+    .tabla {
+        font-size: 14px; /* Ajusta el tamaño de fuente en la tabla */
+    }
+
+    .tabla td, .tabla th {
+        padding: 8px; /* Reduce el padding en las celdas */
+    }
+
+    /* Estilo del footer */
+    .contact-info {
+        padding: 5px 0; /* Ajusta el padding */
+        background-color: #d5d5d5; /* Mantiene el color de fondo */
+        margin-top: 10px; /* Reduce el margen superior */
+    }
+}
+
+/* Diseño responsive básico para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Oculta el correo y la dirección en pantallas pequeñas */
+    .contact-info {
+        display: none; /* Asegura que no se muestre el contenedor */
+    }
+
+    /* Muestra solo los iconos de redes sociales */
+    .social-media {
+        display: flex;
+        justify-content: center;
+        width: auto; /* Ocupar todo el ancho */
+    }
+
+    /* Habilita desplazamiento para el contenido completo */
+    body {
+        overflow-x: auto;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .bodyPractica {
+        font-size: 12px;
+        padding: 10px;
+        background-size: 25%;
+    }
+
+    #formulario {
+        width: 100%;
+    }
+
+    .logo-link {
+        width: 80px;
+        height: 80px;
+    }
+
+    .titulo {
+        font-size: 18px;
+    }
+
+    .tabla {
+        font-size: 10px;
+        overflow-x: auto;
+    }
+
+    .tabla td.observacion {
+        max-width: 100px;
+        font-size: 10px;
+    }
+
+    /* Ajustes de botones */
+    button, a {
+        font-size: 14px;
+        padding: 8px 10px;
+        width: auto%;
+    }
+
+
+    /* Posicionamiento responsive para los botones */
+    .btnperfil {
+        position: absolute; /* Los coloca por encima de otros elementos */
+        z-index: 100; /* Asegura que estén por encima de la tabla */
+        width: 20%; /* Ocupa el 90% del ancho de la pantalla */
+        text-align: center;
+        background-color: white; /* Estilo visual */
+        color: black;
+        padding: 10px;
+        margin-top: 25px;
+    }
+
+    .btnvolver {
+        position: absolute; /* Los coloca por encima de otros elementos */
+        z-index: 100; /* Asegura que estén por encima de la tabla */
+        width: 20%; /* Ocupa el 90% del ancho de la pantalla */
+        text-align: center;
+        background-color: white; /* Estilo visual */
+        color: black;
+        padding: 10px;
+        margin-top: 25px;
+    }
+
+    .tabla {
+        margin-top: 150px; /* Deja espacio para los botones en la parte superior */
+    }
+}
+

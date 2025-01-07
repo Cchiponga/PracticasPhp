@@ -1,0 +1,388 @@
+/* Header general */
+.header {
+    background-color: #0A223D;
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    top: 0; /* Alinea el header arriba */
+    width: 100%; /* Header el ancho de la pantalla */
+    justify-content: space-between;
+    color: white;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor del correo y ubicación */
+.contact-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+/* Redes sociales alineadas a la derecha */
+.social-media {
+    margin-left: auto; /* Mueve los íconos de redes sociales a la derecha */
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #1E90FF; /* Cambia a un azul claro al pasar el ratón */
+}
+
+/* Estilos generales */
+.bodyPractica {
+    margin-top: 60px; /* Ajustar para evitar el header fijo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #d5d5d5;
+    font-size: 16px;
+    
+}
+
+.logo-link {
+    position: absolute;
+    top: 10vh; /* Ajusta según la posición deseada */
+    left: 20px; /* Ajusta según la posición deseada */
+    width: 120px; /* Tamaño del contenedor que incluye el logo */
+    height: 120px; /* Tamaño del contenedor que incluye el logo */
+    background-color: #d5d5d5; /* Color de fondo de la caja, igual al fondo de la página */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el logo */
+    align-items: center; /* Centra verticalmente el logo */
+    border-radius: 10px; /* Opción: añade bordes redondeados para hacer la caja más suave */
+    transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+}
+
+/* Efecto al pasar el cursor */
+.logo-link:hover {
+    background-color: #b0b0b0; /* Cambia a un color diferente cuando el cursor esté sobre el contenedor */
+}
+
+.logo-link img {
+    width: 120%; /* Escala la imagen un poco más grande */
+    height: 120%; /* Escala la imagen un poco más grande */
+    object-fit: contain; /* Asegura que el logo se ajuste al contenedor sin deformarse */
+}
+
+/* Contenedor del formulario */
+.container {
+    background-color: #0A223D;
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 40%; /* Ancho del contenedor */
+    max-width: 500px; /* Ancho máximo */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin: 80px auto; /* Centra el contenedor verticalmente */
+}
+
+/* Estilos de los títulos */
+h1 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 28px; /* Tamaño de fuente más grande para el título */
+    text-align: center; /* Centrar el título */
+}
+
+/* Estilos de los campos de entrada */
+.container input {
+    text-align: center;
+    width: 90%; /* Ajustado el ancho */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde más claro */
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none;
+    background-color: #E7E7E7; 
+    margin-bottom: 10px; /* Espacio entre campos */
+    transition: border-color 0.3s ease; /* Transición para el borde */
+}
+
+/* Estilos de los botones */
+button {
+    text-align: center;
+    width: 90%; /* Ajustado el ancho */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde más claro */
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none;
+    background-color: #E7E7E7; 
+    margin-bottom: 10px; /* Espacio entre botones */
+    transition: border-color 0.3s ease; /* Transición para el borde */
+}
+
+.boton a{
+    color: black;
+    text-align: center;
+    width: 90%; /* Ajustado el ancho */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde más claro */
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none;
+    background-color: #E7E7E7; 
+    margin-bottom: 10px; /* Espacio entre botones */
+    transition: border-color 0.3s ease; /* Transición para el borde */
+}
+
+/* Estilos de los botones */
+.container button {
+    text-align: center;
+    width: 90%; /* Ajustado el ancho */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde más claro */
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none;
+    background-color: #E7E7E7; 
+    margin: 10px 0; /* Espacio entre botones verticalmente */
+    transition: border-color 0.3s ease; /* Transición para el borde */
+}
+
+/* Estilos del botón de actualización */
+.btnActualizar {
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    border: none;
+    padding: 8px 16px; /* Espaciado interno */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 95%; /* Ajustar al mismo ancho */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 10px 0; /* Espacio entre botones */
+}
+
+.btnActualizar:hover {
+    background-color: green; /* Cambia a verde al pasar el cursor */
+}
+
+/* Estilos del botón volver */
+.btnvolver a {
+    display: block; /* Hace que el enlace sea un bloque completo */
+    width: 95%; /* Ajustar al mismo ancho */
+    text-align: center; /* Centra el texto */
+    color: white;
+    padding: 8px 16px; /* Espaciado interno */
+    border: 2px solid black; /* Bordes negros */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    margin: 10px 0; /* Espacio entre botones */
+}
+
+
+.btnvolver a:hover {
+    background-color: #900C3F; /* Cambia el color al pasar el ratón */
+}
+
+
+/* Estilos de los campos de entrada para el profesor */
+.containerProfesor {
+    background-color: #0A223D;
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 40%; /* Ancho del contenedor */
+    max-width: 500px; /* Ancho máximo */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 0px; /* Añadir margen superior para elevar el contenedor */
+}
+
+/* Estilos de los campos de entrada */
+.containerProfesor input {
+    text-align: center;
+    width: 90%; /* Ajustado el ancho */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde más claro */
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none;
+    background-color: #E7E7E7; 
+    margin-bottom: 10px; /* Espacio entre campos */
+    transition: border-color 0.3s ease; /* Transición para el borde */
+}
+
+/* Responsive para tabletas */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Aumenta el ancho en pantallas más pequeñas */
+    }
+}
+
+/* Responsive para teléfonos */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Aumenta el ancho en pantallas más pequeñas */
+    }
+}
+
+/* Estilos generales para enlaces */
+a {
+    padding: 5px 20px;
+    font-size: 16px;
+    border: solid #0A223D;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0A223D;
+    color: white;
+    text-decoration: none;
+}
+
+.rowGenero {
+    margin-bottom: 20px; /* Espacio entre la fila de género y otros elementos */
+    display: flex; /* Flexbox para alinear elementos */
+    flex-direction: column; /* Alinea verticalmente */
+    justify-content: center; /* Alinea el contenido en el centro verticalmente */
+    align-items: center; /* Alinea horizontalmente en el centro */
+}
+
+.rowGenero label {
+    margin-bottom: 5px; /* Espacio entre cada opción */
+}
+
+.rowGenero div {
+    margin-bottom: 5px; /* Espacio adicional entre cada opción de radio */
+}
+
+.listaCarrera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column; /* Esto coloca el texto arriba del checkbox */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container span {
+    margin-bottom: 5px; /* Espacio entre el texto y el checkbox */
+}
+
+input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+/* Diseño responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Oculta el correo y la dirección en pantallas pequeñas */
+    .contact-info {
+        display: none;
+    }
+    .logo-link {
+        display: none;
+    }
+
+    /* Muestra solo los iconos de redes sociales */
+    .social-media {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Estilo del formulario */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    /* Ajustes en los inputs del formulario */
+    .input input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    /* Ajustes en las etiquetas de los campos */
+    .rowDNI label, .rowApellido label, .rowNombre label, 
+    .rowFechaNacimiento label, .rowGenero label, .rowTelefono label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    /* Ajustes en los botones */
+    .rowBotones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnActualizar, .btnvolver {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    /* Estilo del mensaje */
+    .mensaje {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+        background-color: #f2f2f2;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+/* Diseño responsive para pantallas en modo horizontal (landscape) */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Ajustes para el header */
+    .header {
+        flex-direction: row;
+        padding: 5px 10px;
+    }
+
+    /* Ajustes generales del formulario */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Ajustes en el tamaño de los botones */
+    .btnActualizar, .btnvolver {
+        width: 48%;
+        margin: 5px;
+    }
+}
+
+/* Ajustes para pantallas mayores a 768px (escritorio) */
+@media (min-width: 769px) {
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .btnActualizar, .btnvolver {
+        width: 40%;
+    }
+}

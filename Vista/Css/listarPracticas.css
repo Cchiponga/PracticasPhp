@@ -1,0 +1,186 @@
+/* Font and base styles */
+html {
+    font-size: 16px; /* Tamaño base para todo el documento */
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Body general */
+.bodyPractica {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: 12%;
+    font-family: Arial, sans-serif;
+    background-color: #d5d5d5;
+    font-size: 16px;
+}
+
+/* Contenedor */
+#container {
+    background-color: #0A223D; /* Color del contenedor */
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    width: 90%; /* Ajusta el tamaño del contenedor */
+}
+
+/* Título */
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Contenedor de botones */
+.botonera {
+    text-align: center; /* Centrar botones */
+    margin-bottom: 20px; /* Espacio entre botones y tabla */
+}
+
+/* Tabla */
+.tablaAdmin {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Ligero contraste en las tablas */
+    text-align: center;
+}
+
+.tablaAdmin th, .tablaAdmin td {
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+/* Botones generales */
+a, button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a:hover, button:hover {
+    background-color: green;
+    color: white;
+}
+
+
+/* Diseño responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+
+    /* Oculta el correo y la dirección en pantallas pequeñas */
+    .contact-info {
+        display: none; /* Asegura que no se muestre el contenedor */
+    }
+
+    /* Ajustes para el contenedor principal */
+    .container {
+        width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho de la pantalla */
+        overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+        padding: 0; /* Elimina cualquier padding innecesario */
+        margin: 0 auto; /* Centra el contenedor en la pantalla */
+        box-sizing: border-box; /* Incluye el padding y borde en el cálculo del ancho */
+    }
+
+    /* Muestra solo los iconos de redes sociales */
+    .social-media {
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Ocupar todo el ancho */
+    }
+
+    /* Habilita desplazamiento para el contenido completo */
+    body {
+        overflow-x: auto; /* Permite desplazamiento horizontal en caso de que el contenido sea más ancho que la pantalla */
+    }
+
+    /* Ajustes en el header para pantallas pequeñas */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Ajustes en el contenido principal */
+    .bodyPractica {
+        font-size: 10px; /* Reduce el tamaño de fuente para pantallas pequeñas */
+        padding: 5px; /* Reduce el padding para dar más espacio */
+        background-size: 100%; /* Ajusta el tamaño del fondo si tiene alguna imagen de fondo */
+    }
+
+    #formulario {
+        width: 100%; /* El formulario ocupará todo el ancho disponible */
+    }
+
+    /* Ajustes en el tamaño del título */
+    .titulo {
+        font-size: 16px; /* Reduce el tamaño del título */
+    }
+
+    /* Ajustes para la tabla */
+    .tablaAdmin {
+        display: block; /* Asegura que la tabla se comporte como un bloque */
+        width: 100%; /* La tabla ocupará el 100% del ancho del contenedor */
+        max-width: 100%; /* Asegura que no exceda el tamaño de la pantalla */
+        margin-top: 60px; /* Reduce el margen superior para dar más espacio a la tabla */
+        font-size: 12px; /* Reduce el tamaño de la fuente de la tabla */
+        overflow-x: auto; /* Agrega desplazamiento horizontal si es necesario */
+        white-space: nowrap; /* Previene el ajuste vertical del contenido de las celdas */
+    }
+
+    .tablaAdmin td, .tablaAdmin th {
+        padding: 4px; /* Reduce el padding en las celdas */
+        white-space: nowrap; /* Asegura que el contenido no se divida */
+    }
+
+    /* Ajustes para el contenedor de los botones */
+    .boton-container {
+        display: flex; /* Usar flexbox para la alineación horizontal */
+        justify-content: space-between; /* Deja espacio entre los botones */
+        position: absolute; /* Posiciona los botones encima de la tabla */
+        z-index: 100; /* Asegura que los botones estén sobre la tabla */
+        width: auto; /* El ancho del contenedor de botones será automático */
+        max-width: 100%; /* No será más ancho que la pantalla */
+        margin-top: 20px; /* Reduce el margen superior */
+        left: 0; /* Alinea el contenedor de botones al borde izquierdo */
+        padding: 0 10px; /* Agrega un padding lateral reducido */
+        box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    }
+
+    /* Estilos individuales para los botones */
+    .btnvolver, .btnpractica {
+        width: 48%; /* Los botones ocupan el 48% del espacio disponible */
+        text-align: center;
+        background-color: white; /* Estilo visual de los botones */
+        color: black;
+        padding: 5px; /* Reduce el padding de los botones */
+        font-size: 12px; /* Reduce el tamaño de la fuente de los botones */
+    }
+
+    /* Ajustes para que los botones no tengan margen en pantallas pequeñas */
+    @media (max-width: 768px) {
+        .btnvolver, .btnpractica {
+            margin: 0; /* Elimina el margen de los botones */
+        }
+    }
+
+    /* Asegura que la tabla tenga espacio suficiente debajo de los botones */
+    .tabla {
+        margin-top: 120px; /* Reduce el espacio por encima de la tabla para los botones */
+    }
+}

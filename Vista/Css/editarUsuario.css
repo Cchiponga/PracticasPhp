@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+    font-family: Arial; /* Define la fuente por defecto */
+    background-color:#D5D5D5
+  }
+
+  h2{
+    text-align: center;
+    
+  }
+
+  .container input{
+    width: 21%;
+    margin: 10px;
+    border: 2px solid #318CE7;  
+  }
+
+  .rowUsuario{
+    text-align: center;
+    
+  }
+
+  .rowContraseña{
+    padding:10px;
+    text-align: center;
+  }
+
+ .rowidCargo{
+    padding:10px;
+    text-align: center;
+  }
+
+  .input{
+    text-align: center;
+  }
+
+  .btn{
+    width:15%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    background-color: #318CE7;
+    text-align: center;
+    color: #fff;
+  }
+
+  .rowBotones{
+    text-align: center;
+
+  }
+  label{
+    text-align: center;
+  }
+
+  a:hover{
+     color:white;
+     background:#318CE7;
+  }

@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d5d5d5; /* Fondo gris claro */
+}
+
+/* Header */
+.headerIntro {
+    background-color: #0A223D; /* Azul oscuro */
+    text-align: center;
+    padding: 20px;
+}
+
+.logoIntro {
+    width: 300px;
+    height: auto;
+}
+
+/* Contenido Principal */
+.mainContent {
+    text-align: center;
+    margin-top: 100px;
+    color: #0A223D; /* Color de texto en azul */
+}
+
+.welcomeText {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.introText {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.enterBtn {
+    padding: 15px 30px;
+    background-color: #0A223D;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.enterBtn:hover {
+    background-color: #1E90FF; /* Azul claro cuando se pasa el cursor */
+}
+
+/* Footer */
+.footerIntro {
+    text-align: center;
+    background-color: #0A223D;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

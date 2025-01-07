@@ -1,0 +1,293 @@
+/* Header general */
+.header {
+    background-color: #0A223D;
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    top: 0; /*Alinea el header arriba*/
+    width: 100%; /*Header el ancho de la pantalla*/
+    justify-content: space-between;    
+    color: white;
+    box-sizing: border-box;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor del correo y ubicación */
+.contact-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+
+/* Redes sociales alineadas a la derecha */
+.social-media {
+    margin-left: auto; /* Moves social media icons to the right */
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #1E90FF; /* Change to a light blue on hover */
+    color: white;
+}
+
+
+/* Estilos generales */
+.bodyPractica {
+    margin-top: 60px; /* Ajustar para evitar el header fijo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: 12%;
+    font-family: Arial, sans-serif;
+    background-color: #d5d5d5;
+    font-size: 16px;
+    background-image: url("../Imagenes/Logo.png");
+    background-position: 2vh 40px; /* Ajusta la imagen hacia abajo */
+}
+
+.container {
+    background-color: #0A223D;
+    padding: 30px; /* Reducido padding */
+    border-radius: 10px; /* Reducido border-radius */
+    width: 40%; /* Reducido ancho */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 60px; /* Añadir margen superior para elevar el contenedor */
+    
+}
+
+h1 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 28px; /* Tamaño de fuente más grande para el título */
+}
+
+/* Estilos de los campos de entrada */
+.container input {
+    text-align: center;
+    width: 90%; /* Ajustado el ancho */
+    padding: 8px; /* Reducido padding */
+    font-size: 14px; /* Reducido tamaño de fuente */
+    border: 1px solid #ccc; /* Cambiar a un borde más claro */
+    border-radius: 4px; /* Reducido border-radius */
+    outline: none;
+    background-color: #E7E7E7; 
+    margin-bottom: 10px; /* Reducido margen */
+    transition: border-color 0.3s ease; /* Transición para el borde */
+}
+
+button {
+    text-align: center;
+    width: 90%; /* Ajustado el ancho */
+    padding: 8px; /* Reducido padding */
+    font-size: 14px; /* Reducido tamaño de fuente */
+    border: 1px solid #ccc; /* Cambiar a un borde más claro */
+    border-radius: 4px; /* Reducido border-radius */
+    outline: none;
+    background-color: #E7E7E7; 
+    margin-bottom: 10px; /* Reducido margen */
+    transition: border-color 0.3s ease; /* Transición para el borde */
+}
+
+.container input:focus {
+    border-color: #002147; /* Color del borde al enfocar */
+}
+
+
+/* Estilos de los botones */
+.btnRegistrarse{
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    border: none;
+    padding: 8px 16px; /* Reducido padding */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 95%; /* Ajustar al mismo ancho */
+    font-size: 14px; /* Reducido tamaño de fuente */
+}
+
+.btnRegistrarse:hover {
+  background-color: green; /* Cambia a verde al pasar el cursor */
+}
+
+.btnVolverLogin{
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    border: none;
+    padding: 8px 16px; /* Reducido padding */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 95%; /* Ajustar al mismo ancho */
+    font-size: 14px; /* Reducido tamaño de fuente */
+}
+
+.btnVolverLogin:hover {
+  background-color: #900C3F; /* Cambia a verde al pasar el cursor */
+}
+
+/* Espaciado para filas de entrada */
+.rowDNI, .rowApellido, .rowNombre, .rowFechaNacimiento, .rowTelefono {
+    margin-bottom: 10px; /* Reducido margen entre filas */
+}
+
+.rowGenero {
+    margin-bottom: 20px; /* Aumenta el margen entre filas para mayor separación */
+    display: flex; /* Usa flexbox para alinear elementos */
+    flex-direction: fila; /* Alinea verticalmente */
+}
+
+.rowGenero label {
+    margin-bottom: 5px; /* Espacio debajo del label */
+}
+
+.rowGenero div {
+    margin-bottom: 5px; /* Espacio entre cada opción */
+}
+
+/*---------------------------------------------------------------------------*/
+/* CSS PARA EL CREARPROFESOR*/
+
+.containerProfesor {
+    background-color: #0A223D;
+    padding: 30px; /* Reducido padding */
+    border-radius: 10px; /* Reducido border-radius */
+    width: 40%; /* Reducido ancho */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 0px; /* Añadir margen superior para elevar el contenedor */
+    margin-left:5%;
+}
+
+/* Estilos de los campos de entrada */
+.containerProfesor input {
+    text-align: center;
+    width: 90%; /* Ajustado el ancho */
+    padding: 8px; /* Reducido padding */
+    font-size: 14px; /* Reducido tamaño de fuente */
+    border: 1px solid #ccc; /* Cambiar a un borde más claro */
+    border-radius: 4px; /* Reducido border-radius */
+    outline: none;
+    background-color: #E7E7E7; 
+    margin-bottom: 10px; /* Reducido margen */
+    transition: border-color 0.3s ease; /* Transición para el borde */
+}
+
+
+
+
+/* Responsive para tabletas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 80%; /* Aumenta el ancho en pantallas más pequeñas */
+    }
+}
+
+/* Responsive para teléfonos */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 90%; /* Aumenta el ancho en pantallas más pequeñas */
+    }
+}
+
+/* Estilos generales para enlaces */
+a {
+    padding: 5px 20px;
+    font-size: 16px;
+    border: solid #0A223D;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white; /* Color de fondo */
+    color: black; /* Color del texto */
+    text-decoration: none;
+    background-color: #0A223D;
+    color: white;
+}
+
+.rowGenero {
+    margin-bottom: 20px; /* Espacio entre la fila de género y otros elementos */
+    display: flex; /* Flexbox para alinear elementos */
+    flex-direction: column; /* Alinea verticalmente */
+    justify-content: center; /* Alinea el contenido en el centro verticalmente */
+    align-items: center; /* Alinea horizontalmente en el centro */
+}
+
+.rowGenero label {
+    margin-bottom: 5px; /* Espacio entre cada opción */
+}
+
+.rowGenero div {
+    margin-bottom: 5px; /* Espacio adicional entre cada opción de radio */
+}
+
+
+.listaCarrera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container input {
+    margin-top: 5px; /* Espacio entre el label y el checkbox */
+}
+
+
+.titulo {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column; /* Esto coloca el texto arriba del checkbox */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container span {
+    margin-bottom: 5px; /* Espacio entre el texto y el checkbox */
+}
+
+input[type="checkbox"] {
+    margin-top: 5px;
+}

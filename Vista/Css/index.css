@@ -1,0 +1,412 @@
+/* Header general */
+.header {
+    background-color: #0A223D;
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    top: 0; /*Alinea el header arriba*/
+    width: 100%; /*Header el ancho de la pantalla*/
+    justify-content: space-between;    
+    color: white;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor del correo y ubicación */
+.contact-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+
+/* Redes sociales alineadas a la derecha */
+.social-media {
+    margin-left: auto; /* Moves social media icons to the right */
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #1E90FF; /* Change to a light blue on hover */
+    color: white;
+}
+
+/* Estilos Generales */
+.bodyIndex {
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: 12%;
+    font-family: Arial, sans-serif;
+    background-color: #d5d5d5;
+    font-size: 16px;
+}
+
+.logo-link {
+    position: absolute;
+    top: 10vh; /* Ajusta según la posición deseada */
+    left: 20px; /* Ajusta según la posición deseada */
+    width: 100px; /* Tamaño del contenedor que incluye el logo */
+    height: 100px; /* Tamaño del contenedor que incluye el logo */
+    background-color: #d5d5d5; /* Color de fondo de la caja, igual al fondo de la página */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el logo */
+    align-items: center; /* Centra verticalmente el logo */
+    border-radius: 10px; /* Opción: añade bordes redondeados para hacer la caja más suave */
+    transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+}
+
+/* Efecto al pasar el cursor */
+.logo-link:hover {
+    background-color: #b0b0b0; /* Cambia a un color diferente cuando el cursor esté sobre el contenedor */
+}
+
+.logo-link img {
+    width: 120%; /* Escala la imagen un poco más grande */
+    height: 120%; /* Escala la imagen un poco más grande */
+    object-fit: contain; /* Asegura que el logo se ajuste al contenedor sin deformarse */
+}
+
+#form {
+    position: absolute;
+    height: 50%;
+    background-color: #0A223D; /* COLOR DE LA CAJA */
+    padding: 30px;
+    border-radius: 10px;
+    width: 45%; /* Ajusta el ancho según sea necesario */
+    color: #ffffff; /* Texto de ingresar y crear una cuenta */
+}
+
+.Titulo{
+  text-align: center;
+  margin-bottom: 20px;
+  height: 80vh;
+}
+
+#titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tituloIndex{
+  font-size: 24px;
+  margin: 0;
+}
+
+.inputIndex {
+  margin-bottom: 20px;
+}
+
+.inputIndex{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #ffffff; /* Color de la caja input */
+  margin-bottom: 15px;
+}
+
+#boton {
+  text-align: center;
+}
+
+.btnIngresar {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white; /* Color del botón de ingresar */
+  color: black; /* Texto del botón ingresar */
+}
+
+.btnIngresar:hover {
+  background-color: grey; /* Sombreado del botón ingresar */
+}
+
+.register {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white; /* Color del botón de ingresar */
+  color: black; /* Texto del botón ingresar */
+}
+
+/* Estilos generales para enlaces */
+a {
+  padding: 5px 20px;
+  font-size: 16px;
+  border: solid #0A223D;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white; /* Color de fondo */
+  text-decoration: none;
+  background-color: #0A223D;
+  color: white;
+}
+
+/* Header general */
+.header {
+    background-color: #0A223D;
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    top: 0; /*Alinea el header arriba*/
+    width: 100%; /*Header el ancho de la pantalla*/
+    justify-content: space-between;    
+    color: white;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor del correo y ubicación */
+.contact-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+/* Redes sociales alineadas a la derecha */
+.social-media {
+    margin-left: auto; /* Moves social media icons to the right */
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #1E90FF; /* Change to a light blue on hover */
+}
+
+/* Estilos Generales */
+.bodyIndex {
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: 12%;
+    font-family: Arial, sans-serif;
+    background-color: #d5d5d5;
+    font-size: 16px;
+}
+
+.logo-link {
+    position: absolute;
+    top: 10vh; /* Ajusta según la posición deseada */
+    left: 20px; /* Ajusta según la posición deseada */
+    width: 100px; /* Tamaño del contenedor que incluye el logo */
+    height: 100px; /* Tamaño del contenedor que incluye el logo */
+    background-color: #d5d5d5; /* Color de fondo de la caja, igual al fondo de la página */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el logo */
+    align-items: center; /* Centra verticalmente el logo */
+    border-radius: 10px; /* Opción: añade bordes redondeados para hacer la caja más suave */
+    transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+}
+
+/* Efecto al pasar el cursor */
+.logo-link:hover {
+    background-color: #b0b0b0; /* Cambia a un color diferente cuando el cursor esté sobre el contenedor */
+}
+
+.logo-link img {
+    width: 120%; /* Escala la imagen un poco más grande */
+    height: 120%; /* Escala la imagen un poco más grande */
+    object-fit: contain; /* Asegura que el logo se ajuste al contenedor sin deformarse */
+}
+
+#form {
+    position: absolute;
+    height: 50%;
+    background-color: #0A223D; /* COLOR DE LA CAJA */
+    padding: 30px;
+    border-radius: 10px;
+    width: 45%; /* Ajusta el ancho según sea necesario */
+    color: #ffffff; /* Texto de ingresar y crear una cuenta */
+}
+
+.TituloPractica {
+  text-align: center;
+  margin-bottom: 20px;
+  height: 80vh;
+}
+
+#titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tituloIndex{
+  font-size: 24px;
+  margin: 0;
+}
+
+.inputIndex {
+  margin-bottom: 20px;
+}
+
+.inputIndex{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #ffffff; /* Color de la caja input */
+  margin-bottom: 15px;
+}
+
+#boton {
+  text-align: center;
+}
+
+.btnIngresar {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white; /* Color del botón de ingresar */
+  color: black; /* Texto del botón ingresar */
+}
+
+.btnIngresar:hover {
+  background-color: grey; /* Sombreado del botón ingresar */
+}
+
+
+/* Estilos generales para enlaces */
+a {
+  padding: 5px 20px;
+  font-size: 16px;
+  border: solid #0A223D;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white; /* Color de fondo */
+  text-decoration: none;
+  background-color: #0A223D;
+  color: white;
+}
+
+/* Diseño responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Oculta el correo y la dirección en pantallas pequeñas */
+    .contact-info {
+        display: none; /* Asegura que no se muestre el contenedor */
+    }
+
+    /* Muestra solo los iconos de redes sociales */
+    .social-media {
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Ocupar todo el ancho */
+    }
+
+    /* Ajustar el logo para no superponerse */
+    .logo-link {
+        top: 12%; /* Ajusta según la posición deseada */
+        left: 50%; /* Centrar horizontalmente */
+        transform: translateX(-50%); /* Para centrar el logo */
+        width: 60px; /* Ajusta el tamaño en responsive */
+        height: 60px; /* Ajusta el tamaño en responsive */
+    }
+
+    .logo-link img {
+        width: 120%; /* Asegura que el logo ocupe todo el contenedor */
+        height: auto; /* Mantener la proporción */
+    }
+
+    /* Asegura que el resto de los elementos no se superpongan */
+    .bodyIndex {
+        margin-top: 5vh; /* Ajusta para evitar superposición con el logo */
+    }
+
+    /* Aumentar el tamaño del formulario */
+    #form {
+        width: 80%; /* Aumenta el ancho del formulario */
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+        padding: 40px; /* Ajusta el padding si es necesario */
+    }
+
+    /* Estilo para centrar el texto de creación de cuenta y recuperación de contraseña */
+    #boton p {
+        margin-bottom: 20px; /* Espacio entre el texto y el botón */
+        color: white; /* Asegurar que el texto sea visible */
+        text-align: center; /* Centrar el texto */
+        width: 100%; /* Asegura que el párrafo ocupe todo el ancho */
+    }
+
+    #boton {
+        text-align: center; /* Centrar contenido dentro de #boton */
+        margin: 0 auto; /* Centrar el contenedor */
+    }
+
+    #boton a {
+        color: black; /* Cambia el color del texto */
+        text-decoration: none; /* Elimina el subrayado del enlace */
+        display: block; /* Cada enlace ocupa toda una línea */
+        margin: 5px auto; /* Espacio entre los enlaces */
+        text-align: center; /* Centrar el texto */
+        width: 150px; /* Ajusta el ancho del enlace (puedes cambiarlo a lo que desees) */
+    }
+
+
+    /* Asegurar que los enlaces tengan un estilo apropiado */
+    .register {
+        color: black; /* Cambia el color del texto */
+        background-color: white; /* Color de fondo */
+        text-decoration: none; /* Elimina el subrayado del enlace */
+        display: block; /* Cada enlace ocupa toda una línea */
+        margin-bottom: 15px; /* Espacio entre los enlaces */
+        text-align: center; /* Centrar el texto */
+        padding: 10px; /* Añade un poco de espacio interno al botón */
+        border-radius: 5px; /* Bordes redondeados */
+        transition: background-color 0.3s; /* Efecto de transición al pasar el mouse */
+        width: 150px; /* Ajusta el ancho del botón (puedes cambiarlo a lo que desees) */
+        margin: 0 auto; /* Centrar el botón horizontalmente */
+    }
+
+
+    /* Estilo para el footer en responsive */
+    .contact-info {
+        position: relative; /* Permitir que se ubique debajo del contenido */
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 10px 0; /* Añadir algo de espacio arriba y abajo */
+        text-align: center; /* Centrar el texto */
+        background-color: #d5d5d5; /* Color de fondo igual al de la caja */
+        margin-top: 20px; /* Espacio por encima del footer */
+    }
+}

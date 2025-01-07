@@ -1,0 +1,169 @@
+/* Font and base styles */
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Body general */
+.bodyPractica {    
+    display: flex; /* Necesario para flexbox */
+    flex-direction: column; /* Organiza los hijos en columna */
+    align-items: center;
+    background-color: #d5d5d5; /* Color de fondo original */
+    background-image: url("../Imagenes/Logo.png");
+    background-repeat: no-repeat;
+    background-size: 12%;
+    font-family: Arial, sans-serif;   
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura */
+    /* overflow-y: auto; */ /* Descomenta si necesitas scroll vertical */
+}
+
+/* Container Lista */
+.containerLista {   
+    width: 50%;
+    background-color: #0A223D;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;    
+    display: flex;
+    flex-direction: column; /* Coloca elementos en columna */
+    align-items: center;
+    margin: 2% auto 20px auto; /* Centra horizontalmente y añade margen */
+}
+
+/* Formulario de búsqueda */
+.form {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    margin-bottom: 20px; /* Espacio entre el formulario y la tabla */
+    text-align: center;
+}
+
+/* Container Tabla */
+#containerTabla {
+    width: 100%;
+    background-color: #0A223D;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para inputs de texto */
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Tabla */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1); /* Ligero contraste en las tablas */
+    text-align: center;
+}
+
+/* Definir anchos de las columnas */
+.tabla th {
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+/* Anchos fijos para las columnas */
+.tabla th:nth-child(1) { width: 5%; } /* Ejemplo: primera columna */
+.tabla th:nth-child(2) { width: 8%; } 
+.tabla th:nth-child(3) { width: 8%; } 
+.tabla th:nth-child(4) { width: 6%; } 
+.tabla th:nth-child(5) { width: 8%; } 
+.tabla th:nth-child(6) { width: 7%; } 
+.tabla th:nth-child(7) { width: 8%; } 
+.tabla th:nth-child(8) { width: 8%; } 
+.tabla th:nth-child(9) { width: 8%; } 
+.tabla th:nth-child(10) { width: 8%; } 
+.tabla th:nth-child(11) { width: 12%; } /* Ajusta la columna de observación */
+.tabla th:nth-child(12) { width: 14%; }
+
+/* Estilos para las celdas de la tabla */
+.tabla td {
+    padding: 2px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+/* Estilo específico para la columna de observaciones con scroll */
+.tabla td:nth-child(11) { 
+    max-height: 100px; /* Ajusta este valor según sea necesario */
+    overflow-y: auto; /* Habilita el scroll vertical */
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    text-overflow: ellipsis; /* El texto que no quepa se cortará con puntos suspensivos */
+    white-space: normal; /* Permite el ajuste de línea */
+    word-wrap: break-word; /* Asegura que las palabras largas se dividan */
+    padding: 5px; /* Ajusta el relleno si es necesario */
+    display: block; /* Hace que el td se comporte como un bloque para el scroll */
+}
+
+
+/* Botones de acciones */
+a.btnCrear,
+.btnEditar,
+.btnBorrar,
+.btnbuscar,
+a.volver {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px; /* Espaciado entre botones */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+a.btnCrear:hover {
+    background-color: #45a049;
+}
+
+.btnEditar:hover {
+    background-color: green;
+    color: white;
+}
+
+.btnBorrar:hover {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.btnbuscar:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Botón Volver */
+a.volver {
+    margin-top: 20px;
+}
+
+a.volver:hover {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.select {
+    color: black;
+    text-align: center; /* Centrar el texto */
+    text-align-last: center; /* Para centrar la opción seleccionada en algunos navegadores */
+}

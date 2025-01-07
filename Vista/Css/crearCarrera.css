@@ -1,0 +1,258 @@
+/* Header general */
+.header {
+    background-color: #0A223D;
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    top: 0; /* Alinea el header arriba */
+    width: 100%; /* Header el ancho de la pantalla */
+    justify-content: space-between;
+    color: white;
+    box-sizing: border-box;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor del correo y ubicación */
+.contact-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+/* Redes sociales alineadas a la derecha */
+.social-media {
+    margin-left: auto; /* Mueve los íconos de redes sociales a la derecha */
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #1E90FF; /* Cambia a azul claro al pasar el ratón */
+    color: white;
+}
+
+/* Estilos generales */
+.bodyPractica {
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 12%;
+    font-family: Arial;
+    background-color: #d5d5d5;
+    font-size: 16px;
+    background-image: url("../Imagenes/Logo.png");
+    background-position: 2vh 40px; /* Ajusta la imagen hacia abajo */
+}
+
+/* Encabezado */
+h1 {
+    margin-top: 20px;
+    color: white;
+    font-size: 28px;
+}
+
+/* Formulario */
+form {
+    background-color: #0A223D;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 97%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background-color: #E7E7E7;
+}
+
+/* Ajuste del input del nombre de la carrera */
+form input[name="nombre_carrera"] {
+    width: 50%; /* Ancho reducido */
+    padding: 8px;
+    font-size: 12px; /* Tamaño de fuente reducido */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background-color: #E7E7E7;
+}
+
+form input[type="text"]:focus {
+    border-color: #1E90FF;
+}
+
+/* Botones de agregar y quitar materias */
+
+button[type="button"] {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #1E90FF;
+    color: white;
+}
+
+/* Contenedor de materias */
+#materiasContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.materia {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.materia input[type="text"] {
+    flex: 1;
+}
+
+.materia button {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid black; /* Bordes negros */
+}
+
+.materia button:hover {
+    background-color: #900C3F;
+}
+
+/* Botón de enviar */
+form button[type="submit"] {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: green;
+    color: white;
+}
+
+
+/* Estilos del botón volver */
+.btnvolver {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid black; /* Bordes negros */
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white; /* Color de fondo blanco */
+  color: black; /* Color del texto negro */
+  position: absolute; /* Posiciona el botón en relación al contenedor */
+  top: 110px; /* Posición desde la parte superior */
+  right: 435px; /* Posición desde la parte derecha */
+}
+
+.btnvolver:hover {
+  background-color: #900C3F ; /* Cambia de color cuando pasen el mouse */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Enlace de volver */
+h3 a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #0A223D;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+h3 a:hover {
+    background-color: #0A223D;
+    color: white;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+/* Estilos generales para enlaces */
+a {
+    padding: 5px 20px;
+    font-size: 16px;
+    border: solid #0A223D;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white; /* Color de fondo */
+    color: black; /* Color del texto */
+    text-decoration: none;
+    background-color: #0A223D;
+    color: white;
+}
+
+/* Estilos generales para enlaces */
+a {
+  padding: 5px 20px;
+  font-size: 16px;
+  border: solid #0A223D;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white; /* Color de fondo */
+  color: black; /* Color del texto */
+  text-decoration: none;
+  background-color: #0A223D;
+  color: white;
+}

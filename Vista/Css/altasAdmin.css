@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
+    background-color: #f0f0f0; /* Color de fondo más suave */
+    font-size: 16px;
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el padding por defecto del body */
+    text-align: center; /* Centra el texto globalmente */
+    line-height: 1.5; /* Mejora la legibilidad */
+}
+
+/* Estilos para tabletas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para tabletas */
+    }
+
+    .caja {
+        width: 80%; /* Ajusta el ancho de la caja en tabletas */
+        margin: 20px auto; /* Centra la caja y ajusta el margen */
+    }
+
+    .btn {
+        width: 70%; /* Botones un poco más grandes en tabletas */
+    }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+    body {
+        font-size: 13px; /* Reduce un poco el tamaño de la fuente para celulares */
+    }
+
+    .caja {
+        width: 90%; /* La caja se adapta mejor a pantallas pequeñas */
+        margin: 15px auto; /* Reduce el margen para celulares */
+    }
+
+    .btn {
+        width: 90%; /* Botones más grandes para mejor interacción táctil */
+        padding: 10px; /* Padding más ajustado */
+        font-size: 14px; /* Ajusta el tamaño de fuente para los botones en móviles */
+    }
+}
+
+/* Estilos comunes */
+.caja {
+    border: 1px solid #0069d9; /* Bordes definidos */
+    border-radius: 15px; /* Bordes redondeados más sutiles */
+    background-color: #002147; /* Color de fondo más oscuro */
+    color: white;
+    padding: 20px; /* Espacio interno para el contenido */
+    width: 50%; /* Ancho predeterminado */
+    margin: 30px auto; /* Centrado con margen superior */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para efecto de elevación */
+}
+
+/* Selector (desplegable) */
+.selector {
+    width: 80%; /* Ancho más amplio */
+    margin: 10px auto; /* Centrado y separado */
+    padding: 8px; /* Añadido padding para mejor presentación */
+    border-radius: 5px; /* Bordes suavizados */
+}
+
+/* Estilos de botones */
+.btn {
+    display: inline-block; /* Mejor alineación de botones */
+    text-decoration: none;
+    width: 60%; /* Ancho ajustable */
+    padding: 12px 0; /* Espaciado interno del botón */
+    font-size: 15px; /* Ajuste del tamaño de la fuente */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #D3CCCC; /* Color de fondo neutral */
+    color: black;
+    margin: 15px auto; /* Separación entre botones */
+    transition: background-color 0.3s ease; /* Efecto de transición suave */
+}
+
+.btn:hover {
+    background-color: #bbb; /* Color de hover más claro */
+}
+
+/* Ajustes de alineación y tamaño */
+* {
+    box-sizing: border-box; /* Asegura un comportamiento consistente de padding y border */
+}

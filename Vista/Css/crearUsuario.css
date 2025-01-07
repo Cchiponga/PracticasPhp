@@ -1,0 +1,81 @@
+
+/******* ESTILOS PARA CREAR PROFESOR *******/
+
+/* Estilos generales */
+.bodyCrearProfesor{
+    font-family: Arial; /* Define la fuente por defecto */
+    background-color:#D5D5D5;
+    text-align: center;
+  }
+
+
+  .tituloNewProfessor{
+    text-align: center;
+    
+  }
+
+  .cajaCrearProfesor{
+    margin-left: 35%;
+    border: 1px solid #0069d9;
+    border-radius: 10px;
+    width: 28%;
+    background-color: #318CE7;
+    color:white;
+    
+  }
+
+  .botonCrearProfesor{
+    width:30%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    background-color:rgb(211, 204, 204);
+    text-align: center;
+    color:black;
+  }
+
+  .botonCrearProfesor:hover{
+    color: black;
+    background-color: #0069d9;
+  }
+
+  .boton2CrearProfesor{
+    text-decoration: none; 
+    width: 35%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgb(211, 204, 204); /* Blue button color */
+    color: black; /* White button text color */  
+}
+
+  
+
+  .boton2CrearProfesor:hover{
+     color:black;
+     background:#0069d9;
+  }
+
+  
+  /**************************
+***************************
+***************************
+***************************
+**************************/
+/**************************
+***************************
+***************************
+***************************
+**************************/
+/**************************
+***************************
+***************************
+***************************
+**************************/
+
+/******* ESTILOS PARA CREAR ALUMNO *******/
+

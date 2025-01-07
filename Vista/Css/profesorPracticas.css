@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    font-family: Arial; /* Define la fuente por defecto */
+    background-color: #d5d5d5;
+  }
+  
+  #container {
+    width: 80%; /* Establece un ancho del 100% */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Agrega 20px de relleno */
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #318CE7; /* Fondo azul */
+    padding: 15px 0; /* Agrega 15px de margen superior e inferior */
+    text-align: center; /* Centra el texto */
+  }
+  
+  
+  /* Estilos de la tabla */
+  .prenda-list {
+    width: 100%; /* Ocupa el ancho completo */
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    margin: 20px 0; /* Agrega 20px de margen superior e inferior */
+  }
+  
+  .prenda-list th {
+    background-color: #0B20D3; /* Fondo azul para los encabezados */
+    padding: 10px; /* Agrega 10px de relleno */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  .prenda-list td {
+    padding: 5px; /* Agrega 5px de relleno */
+    border: 1px solid #000000; /* Borde negro para las celdas */
+  }
+  
+  /* Estilos del botón */
+  .prenda-list button {
+    background-color: #000000; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 8px 15px; /* Agrega margen interior */
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el botón */
+  }
+  
+  .prenda-list button:hover {
+    background-color: #0056b3; /* Cambia el fondo a un azul más oscuro al pasar el cursor */
+  }
+
+  .titulo {
+    color: white;
+  }
+
+  .admin {
+    text-align: center;
+  }
+
+  .btn {
+    text-decoration: none;
+    text-align: center;
+    width: 28%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #318CE7; /* Blue button color */
+    color: white; /* White button text color */
+  }
+  
+  .btn:hover{
+    background-color: gray;
+  }
+
+  .btnSalir{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 46%;
+    width: 28%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: darkred; /* Blue button color */
+    color: white; /* White button text color */
+  }
+
+  .btnSalir:hover {
+    background-color: grey;
+  }

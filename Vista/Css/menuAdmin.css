@@ -1,0 +1,162 @@
+/* Font and base styles */
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+/* Body general */
+.bodyPractica {    
+    align-items: center;
+    background-color: #d5d5d5; /* Mantengo el color de fondo original */
+    background-image: url("../Imagenes/Logo.png");
+    background-repeat: no-repeat;
+    background-size: 12%;
+    font-family: Arial;   
+    /* height: 100vh; /* Ajusta la altura del body al 100% de la ventana */
+    /* overflow-y: auto; Agrega el scroll vertical cuando sea necesario */
+}
+
+/* Formulario de búsqueda */
+.form {
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho */
+    margin-bottom: 20px; /* Añade espacio entre el formulario y la tabla */
+    text-align: center;
+}
+
+/* Container Buscar por DNI */
+#containerLista {   
+    width: 50%;
+    background-color: #0A223D;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;    
+    justify-content: flex-start; /* Empuja los elementos hacia arriba */    
+    margin-bottom: 20px; /* Espacio entre el formulario y la tabla */ 
+    display: flex;
+    flex-direction: column; /* Asegura que el form y la tabla estén en una columna */  
+    align-items: center;
+    margin-left: 25%; /* Mueve el contenedor hacia la derecha */
+    margin-top: 2%; /* Mueve el contenedor hacia la derecha */
+}
+
+/* Tabla */
+#containerTabla {
+    width: 100%;
+    background-color: #0A223D;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Ligero contraste en las tablas */
+    text-align: center;
+}
+
+.tabla th, .tabla td {
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+/* Scroll dentro de las celdas de observación */
+.tabla td.observacion {
+    max-width: 200px; /* Ajusta el tamaño máximo de la columna de observación */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.tabla td.observacion:hover {
+    white-space: normal; /* Permite que se vea todo el texto al hacer hover */
+    overflow: visible;
+}
+
+.tabla tbody {
+    background-color: #1A2E4A; /* Restaurado el color de fondo de la tabla */
+}
+
+/* Estilo del scroll en la tabla */
+.tabla tbody {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Botones de acciones */
+a.btnCrear {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.btnCrear:hover {
+    background-color: #45a049;
+}
+
+.btnEditar, .btnBorrar {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btnEditar:hover {
+    background-color: green;
+}
+.btnBorrar:hover {
+    background-color: #d32f2f;
+}
+
+.btnbuscar {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btnbuscar:hover {
+    background-color: green;
+}
+
+
+/* Botón volver */
+a.volver {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a.volver:hover {
+    background-color: #d32f2f;

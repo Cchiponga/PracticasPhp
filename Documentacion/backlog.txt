@@ -1,0 +1,32 @@
+﻿
+Pendientes:
+-Css nuevos/EN PROGRESO
+-Que los profesores puedan mover de practica a los alumnos entre la carrera.
+-Cambiar las variables $conexion por una clase conexion y datos de la base tanto nombre, usuario y contraseña.
+-Comentar codigo para las personas que vienen despues.
+
+
+
+Completados:
+-A la hora de crear practicas que solamente traiga los profesores de la carrera seleccionada y no todos./COMPLETADO
+-El profesor solo ve las  prácticas que declaro / COMPLETADO POR LE CABRIUUUU
+-Arreglar el editar alumno/Profesor en admin /COMPLETADO
+-Hacer que los profesores tengan su relacion con los años que dan(tabla ya echa)/COMPLETADO
+-Terminar las boton inscripciones/COMPLETADO
+-A la hora de crear practicas poner filtro de horario , desde hasta (limite 4 hrs)/COMPLETADO
+-Probar responsive/Probado en inspeccionar de google
+-Filtros en la busqueda en los menu del admin/COMPLETADO
+-Que el alumno pueda ver la practica/s a la cual se inscribio./COMPLETO
+-Si el alumno fue creado desde el admin no puede anotarse a ninguna practica(arreglar ese error)./ARREGLADO
+-No se pueda inscribir mas de 1 vez EXCEPTUANDO si tiene 2 o mas carreras/COMPLETO.
+-Profesor pueda cargar varias carreras tercera tabla parecida a la de alumno carrera/COMPLETO
+-Que el profesor solo pueda hacer practicas de sus carreras/COMPLETO
+-A la hora de crear practicas que solamente traiga los profesores de la carrera seleccionada y no todos./COMPLETO
+-Los profesores pueden ver su lista de alumnos que se inscribieron a sus practicas/COMPLETO
+-Los profesores pueden descargar PDF de cada lista de alumnos de sus practicas/COMPLETO
+-Que descuente las vacantes a la hora de inscribirse/COMPLETO
+-Que las fechas de nacimiento no sean menor a 18 años y mayor a 99/COMPLETO
+-Comprobantes de inscripciones/COMPLETO
+-Validacion crear profesor/alumno en admin/COMPLETO
+-Validacion de practica en admin/profesor/COMPLETO
+-Agregarle faltantes al editar practicas/COMPLETADO
